@@ -1,14 +1,13 @@
-
-
 function upDate(previewPic){
-    document.getElementById("image").style.backgroundImage="url('" + previewPic.src + "')";
-    document.getElementById("image").innerHTML=previewPic.alt;
-    console.log();
+    const images =document.getElementById("image");
+    images.style.backgroundImage="url('" + previewPic.src + "')";
+    images.textContent=previewPic.alt;
+    
 }
 
 	function unDo(){
-        document.getElementById("image").style.backgroundImage="url('')";
-        document.getElementById("image").innerHTML="Hover over an image below to display here.";
+        const images=document.getElementById("image")
+        images.style.backgroundImage="url('')";
+        images.textContent="Hover over an image below to display here.";
      
-		
 	}
