@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="css/gallery.css">
+	<head>
+	   <meta charset="UTF-8">
+	   <title>Photo Gallery</title>
+	   <link rel="stylesheet" href="css/gallery.css">
 	
-</head>
-<body>
+    </head>
+    <body onload="aleatoire()">
+	    <div id = "image" >
+			Hover over an image below to display here.
+	    </div>
 	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
+	    <img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
 	
+	    <img class = "preview" alt = "L'océan" src = "https://www.austockphoto.com.au/imgcache/uploads/photos/compressed/portrait-view-of-powerful-oceans-waves-in-the-early-morning-light-austockphoto-000118241.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()"  onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+	
+	    <img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+	
+	    <img class="preview" alt="perroquet" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHxYft1f_Ln_y_scKnh8-g5rLMmce7JKyPQ&s" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
 
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	    <img class="preview" src="https://img.freepik.com/photos-gratuite/homme-du-courage-passe-travers-ecart-entre-colline-idee-concept-entreprise_1323-262.jpg?semt=ais_user_personalization&w=740&q=80" alt="Un homme sautant avec détermination d'une falaise à une autre" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
 
-    <script src = "js/gallery.js"></script>
+	    <img class="preview" src="https://i.pinimg.com/736x/2d/95/e5/2d95e5886fc4c65a6778b5fee94a7d59.jpg" alt="Une plume" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+
+        <script src = "js/gallery.js"></script>
 	
-</body>
+    </body>
 </html>
