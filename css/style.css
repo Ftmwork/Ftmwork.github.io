@@ -1,0 +1,93 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family:Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+img{
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 200px;
+  }
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+@media screen and (min-width : 772px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid img{
+        border-color: black;
+    }
+
+    .grid figure{
+        border-radius: 5px;
+        background-color: rgb(50, 16, 82);
+        color:antiquewhite
+    }
+
+    .grid figure:last-of-type {
+        grid-column: 1/-1;                                
+    } 
+    
+    body{
+        background-color: rgb(121, 92, 150);
+    }
+}
+
+@media screen and (min-width : 992px){
+
+    .grid img{
+        border-radius:0;
+    }
+
+    .grid figure:nth-of-type(3n) {
+        grid-column: 1/-1;    
+    }
+
+    body{
+        background-color: rgb(92, 98, 150);
+    }
+
+    .grid figure{
+        background-color: rgb(24, 28, 88);
+        color:rgb(251, 230, 203)
+    }
+    
+}
+
+@media(prefers-reduced-motion:no-preference) {
+    html{
+        scroll-behavior:none !important;
+    }
+    
+}
