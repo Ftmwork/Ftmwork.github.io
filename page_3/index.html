@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Horaires de livraison-Vesuvio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="hdgGothic">Horaires de livraison</h1>
+    </header>
+
+
+    <main class="main3">
+        <div class="hours-container">
+            <section class="Delivery1">
+                <h2 id='heading'>Midi</h2>
+                <ul class="Delivery">
+                    <li>12h30</li>
+                    <li>13h00</li>
+                    <li>13h45</li>
+                </ul>
+            </section>
+            <section class="Delivery2">
+                <h2 id='heading'>Après-midi & Soir</h2>
+                <ul class="Delivery">
+                   <li>15h</li>
+                   <li>17h30</li>
+                   <li>20h</li>
+                   <li>21h30</li> 
+                </ul>
+
+                <div>
+                  <button type="button" id="confirmer_p3">Confirmer</button>
+                  <a href="../index.html" id="pageDacceuil">Revenir à la page d'accueil</a>
+                <!--Aucun des ces 2 ne peut être un élément descendant de l'autre, donc il faut utiliser javascript. Ou modifier le style de <a> en Css-->
+                </div>
+            </section>   
+        </div>  
+
+
+        <!------PAGE CACHEES------------>
+        <div class="hidden" id="fenetreConfirmation">
+            <div>
+               <p>Voulez vous confirmer la commande. Sinon la commande sera réinitialisée.</p>
+               <p id="recap"></p>
+               <button type="button" id="Yes">Oui</button>
+               <button type="button" id="No">Non</button> 
+            </div>
+            
+        </div>
+
+        <div class="hidden" id="Sended">
+            <div>
+               <p id="congratulation"></p> 
+            </div>
+            
+        </div>
+
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
